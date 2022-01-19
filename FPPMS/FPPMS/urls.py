@@ -13,7 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import include, url
 from django.contrib import admin
 from django.urls import path
 from . import views as mainviews
@@ -22,10 +22,16 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+     url(r'^admin/', admin.site.urls),
     path('Insertproposal',mainviews.saveproposal,name="saveproposal"),
     path('',mainviews.insertproposal),
     path('displayProposal',adminportal_views.displayProposal,name="displayProposal"),
+    path('proposals',adminportal_views.displayProposalList),
+    path('addAdmin',adminportal_views.addAdmin),
+    path('dashboard',adminportal_views.dashboard,name="dashboard"),
+    path('proposal/<int:pk>',adminportal_views.ProposalUpdate.as_view()),
+    path('adminlogin/', include('django.contrib.auth.urls')),
+    path('adminlogin/', include('adminlogin.urls')),
 ]
 
 if settings.DEBUG:

@@ -1,50 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" >
-    <title>FAQ</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="FAQ.css">
-  </head>
-  <body>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fanshawe College</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assates/css/style.css">
+    <link rel="stylesheet" href="../assates/css/effect.css">
+    <link rel="stylesheet" href="../assates/css/FAQ.css">
+    <link href="../assates/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="../assates/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- Vendor CSS-->
+    <link href="../assates/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../assates/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <!-- Main CSS-->
+    <link href="../assates/css/main.css" rel="stylesheet" media="all">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style type="text/css">
+        .container1 {
+            padding: 60px 50px;
+        }
+    </style>
+    
+</head>
 
-<nav class="navbar navbar-default bg-danger navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">Fanshawe</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-center justify-content-center">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li class="active"><a href="#faq">FAQ</a></li>
-        <li><a href="#proposal">PROPOSAL</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><form class="form-inline">     
-      <button type="button" class="btn admin font-weight-bold"><i class="fa fa-sign-in"></i> Admin</button>
-      </form>
-      </li>
-      </ul>
-  </div>
-</div>
-</nav>
+<body>
 
-    <div id = parallax-image>
-        
-    </div>
+    <header class="header">
+        <div class="header-inner">
+            <div class="container-fluid px-lg-5">
+                <nav class="navbar navbar-expand-lg my-navbar">
+                    <a class="navbar-brand" href="#">
+                      <span class="logo">
+                        <img src="../assates/image/logo.png" class="img-fluid">
+                      </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars"aria-hidden="true"></i></span>
+                     </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold" href="#">HOME<span class="sr-only"></span></a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold" href="GetToKnowUs.html">ABOUT US</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link font-weight-bold" href="FAQ.html">FAQ</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <div class="showcase-btn"><button class="header-btn bg-danger my-2 my-sm-0 font-weight-bold" type="submit">Admin</button></div>
+                        </form>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="parallax-image-faq img-fluid content-banner">
+       
+    </section> 
     
     <h1 class="text-center">Frequently Asked Questions<h1> 
      
@@ -150,30 +173,31 @@
       </div>
     </section>
 
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script>
-
-        window.sr = reveal();
-        sr.reveal('.showcase-btn',{
-            duration: 2000,
-            delay: 500,
-            origin: 'bottom'
-        });
-        sr.reveal('.info-left',{
-            duration:1000,
-            origin:'left',
-            distance:'300px',
-            viewFactor: 0.2
-        });
-        sr.reveal('.info-right',{
-            duration:1000,
-            origin:'right',
-            distance:'300px',
-            viewFactor: 0.2
-        });
-        </script>
-         
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+     <!-- Vendor JS-->
+     <script src="../assates/vendor/select2/select2.min.js"></script>
+     <script src="../assates/vendor/datepicker/moment.min.js"></script>
+     <script src="../assates/vendor/datepicker/daterangepicker.js"></script>
+     <!-- Main JS-->
+     <script src="../assates/js/global.js"></script>   
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+     
+     <script type="text/javascript">
+         $(function() {
+             var navbar = $('.header-inner');
+             $(window).scroll(function() {
+                 if ($(window).scrollTop() <= 40) {
+                     navbar.removeClass('navbar-scroll');
+                 } else {
+                     navbar.addClass('navbar-scroll');
+                 }
+             });
+         });
+     </script>
+ 
   </body>
-
-  </html>
+</html>
